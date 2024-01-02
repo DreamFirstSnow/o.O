@@ -345,7 +345,7 @@ rules:
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
 EOF
-  link="hysteria2://$password@[$(ip_get)]:$user_port/?insecure=0&sni=$domain#Hysteria2"
+  link="hysteria2://$password@[$domain]:$user_port/?insecure=0&sni=$domain#Hysteria2"
 fi
 
 # 打印分享链接
